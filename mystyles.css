@@ -1,0 +1,10 @@
+a:link, a:visited {
+  font-weight: bold;
+  text-decoration: none;
+}
+
+a:hover, a:active {
+  color: blue;
+  font-weight: bold;
+  text-decoration: underline;
+}

@@ -1,1 +1,407 @@
-Hello World
+<!DOCTYPE html>
+<html>
+  <head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-112500-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-112500-2');
+</script>
+    <script src="https://kit.fontawesome.com/3204c0fb73.js" crossorigin="anonymous"></script>
+  </head>
+<title>Leonardo's Corner on the Web</title>
+<link rel="icon" href="./images/Leo.jpg">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3pro.css">
+<link rel="stylesheet" href="mystyles.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+</style>
+<!-- Accordion for projects -->
+<script>
+function myAccordion(id) {
+  var x = document.getElementById(id);
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else {
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
+<!-- scite_ -->
+<link rel="stylesheet" type="text/css" href="https://cdn.scite.ai/badge/scite-badge-latest.min.css">
+<script async type="application/javascript" src="https://cdn.scite.ai/badge/scite-badge-latest.min.js">
+</script>
+<!-- altmetrics -->
+<script type='text/javascript' src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script>
+
+<body class="w3-white w3-text-indigo w3-content" style="max-width:1600px">
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-collapse w3-light-grey w3-text-indigo w3-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
+  <div class="w3-container">
+    <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding" title="close menu">
+      <i class="fa fa-remove"></i>
+    </a>
+    <img src="./images/Leo.jpg" style="width:45%;" class="w3-round"><br><br>
+    <h4><b>Leonardo Candela</b></h4>
+<!--    <p class="w3-text-grey">National Research Council of Italy</p> -->
+  </div>
+  <div class="w3-panel">
+  <img src="./images/Logo CNR-2010-ENG-medium.png" style="width:100%" alt="National Research Council of Italy">
+  </div>
+  <div class="w3-bar-block">
+    <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-hover-blue"><i class="far fa-user fa-fw w3-margin-right"></i>About</a> 
+    <a href="#papers" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-hover-blue"><i class="far fa-file-alt fa-fw w3-margin-right"></i>Papers</a>
+    <a href="#projects" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-hover-blue"><i class="fas fa-atom fa-fw w3-margin-right"></i>Projects</a>
+    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-hover-blue"><i class="far fa-envelope fa-fw w3-margin-right"></i>Contact</a>
+  </div>
+  
+  <div class="w3-panel w3-large">
+    <!-- ORCID -->
+    <a href="http://orcid.org/0000-0002-7279-2727" target="_blank"><i class="fab fa-orcid"></i></a>
+    <!-- Twitter -->
+    <a href="http://twitter.com/leonardocandela" target="_blank"><i class="fa fa-twitter w3-hover-opacity"></i></a>
+    <!-- LinkedIn -->
+    <a href="http://www.linkedin.com/in/leonardocandela" target="_blank"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+    <!-- ResearchGate -->
+    <a href="https://www.researchgate.net/profile/Leonardo_Candela" target="_blank"><i class="fab fa-researchgate"></i></a>
+    <!-- Facebook -->
+    <a href="http://www.facebook.com/leonardo.candela" target="_blank"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+  </div>
+</nav>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:300px">
+
+  <!-- Header -->
+<!--  <header id="portfolio">
+    <a href="#"><img src="/w3images/avatar_g2.jpg" style="width:65px;" class="w3-circle w3-right w3-margin w3-hide-large w3-hover-opacity"></a>
+    <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i class="fa fa-bars"></i></span>
+    <div class="w3-container">
+    <h1><b>My Portfolio</b></h1>
+    <div class="w3-section w3-bottombar w3-padding-16">
+      <span class="w3-margin-right">Filter:</span> 
+      <button class="w3-button w3-black">ALL</button>
+      <button class="w3-button w3-white"><i class="fa fa-diamond w3-margin-right"></i>Design</button>
+      <button class="w3-button w3-white w3-hide-small"><i class="fa fa-photo w3-margin-right"></i>Photos</button>
+      <button class="w3-button w3-white w3-hide-small"><i class="fa fa-map-pin w3-margin-right"></i>Art</button>
+    </div>
+    </div>
+  </header>
+-->
+  
+  <!-- First Photo Grid-->
+<!--  <div class="w3-row-padding">
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="/w3images/mountains.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>Lorem Ipsum</b></p>
+        <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+      </div>
+    </div>
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="/w3images/lights.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>Lorem Ipsum</b></p>
+        <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+      </div>
+    </div>
+    <div class="w3-third w3-container">
+      <img src="/w3images/nature.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>Lorem Ipsum</b></p>
+        <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+      </div>
+    </div>
+  </div>
+  -->
+  
+  <!-- Second Photo Grid-->
+<!--  <div class="w3-row-padding">
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="/w3images/p1.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>Lorem Ipsum</b></p>
+        <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+      </div>
+    </div>
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="/w3images/p2.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>Lorem Ipsum</b></p>
+        <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+      </div>
+    </div>
+    <div class="w3-third w3-container">
+      <img src="/w3images/p3.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>Lorem Ipsum</b></p>
+        <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+      </div>
+    </div>
+  </div>
+-->
+
+  <!-- Pagination -->
+<!--  <div class="w3-center w3-padding-32">
+    <div class="w3-bar">
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">Â«</a>
+      <a href="#" class="w3-bar-item w3-black w3-button">1</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">2</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">3</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">4</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">Â»</a>
+    </div>
+  </div>
+-->
+
+  <!-- A B O U T    S E C T I O N -->
+
+  <div class="w3-container w3-padding-large" style="margin-bottom:32px" id="about">
+    <h4><i class="far fa-user fa-fw w3-margin-right"></i><b>About Me</b></h4>
+    <p>I’m a senior researcher at the <a href="https://infrascience.isti.cnr.it" target="_blank">InfraScience</a> Laboratory of the <a href="http://www.cnr.it" target="_blank">National Research Council of Italy</a> - <a href="http://www.isti.cnr.it" target="_blank">Institute of Information Science and Technologies</a> (CNR - ISTI). I graduated in Computer Science in 2001 at University of Pisa and completed a PhD in Information Engineering in 2006 at University of Pisa.</p>
+
+<p>My research interests include 
+
+<button class="w3-btn w3-border w3-round-large w3-hover-blue w3-padding-small">Virtual Research Environments</button> 
+<button class="w3-btn w3-border w3-round-large w3-hover-blue w3-padding-small">Infrastructures for Research</button>
+<button class="w3-btn w3-border w3-round-large w3-hover-blue w3-padding-small">Open Science</button>
+<button class="w3-btn w3-border w3-round-large w3-hover-blue">Publishing</button>
+<button class="w3-btn w3-border w3-round-large w3-hover-blue w3-padding-small">Scholarly Communication</button>
+<button class="w3-btn w3-border w3-round-large w3-hover-blue w3-padding-small">Digital Library [Management] Systems and Architectures</button>
+<button class="w3-btn w3-border w3-round-large w3-hover-blue w3-padding-small">Digital Libraries Models</button>
+<button class="w3-btn w3-border w3-round-large w3-hover-blue w3-padding-small">Distributed Information Retrieval</button>
+<button class="w3-btn w3-border w3-round-large w3-hover-blue w3-padding-small">Grid and Cloud Computing</button>
+</p>
+
+<p>I was involved in several <a href="#projects">EU-funded projects</a>.</p>
+
+<p>I was a member of the DELOS Reference Model Technical Committee and of the OAI-ORE Liaison Group.</p>
+</div>
+    
+  <!-- P A P E R S   S E C T I O N -->
+  <div class="w3-container w3-padding-large" style="margin-bottom:32px" id="papers">
+    <h4><i class="far fa-file-alt fa-fw w3-margin-right"></i><b>Papers</b></h4>
+    <p>My research activity leads to the production of various papers. I have (co-)authored books and booklets as well as papers that have been published in books, journals, and national and international conference and workshop proceedings.</p>
+    <h5>2021</h5>
+    <!-- SOCA -->
+    <div>
+    ReLock: a resilient two-phase locking RESTful transaction model
+    </div>
+    <!-- <div class="scite-badge" data-doi="10.1007/s11761-020-00311-z"/> -->
+    <div data-badge-popover="right" data-badge-type="4" data-doi="10.1007/s11761-020-00311-z" data-hide-no-mentions="true" class="altmetric-embed"></div>
+        
+    <h5>2020</h5>
+<!-- EN123 -->
+<div onclick="myAccordion('EN123')" class="w3-row-padding w3-left-align w3-round w3-border w3-hover-blue">
+      <div class="w3-container w3-cell w3-cell-middle"><img src="./images/covers/EN123.jpg" class="w3-image w3-round" style="width:100%;max-width:50px"></img></div>
+      <div class="w3-container w3-cell w3-cell-middle"><b>Understanding and Managing Ocean Sustainability: The Blue-Cloud Project</b><br>By Leonardo Candela and Pasquale Pagano</div>
+</div>    
+    
+<div id="EN123" class="w3-container w3-hide w3-animate-zoom">
+    <p>In Food Control, Volume 121, March 2021</p>
+    <p>Abstract: </p>
+    </div>
+    
+<!-- Food Control -->
+<div onclick="myAccordion('FoodControl')" class="w3-row-padding w3-left-align w3-round w3-border w3-hover-blue">
+      <div class="w3-container w3-cell w3-cell-middle"><img src="./images/covers/1-s2.0-S0956713520X00065.gif" class="w3-image w3-round" style="width:100%;max-width:50px"></img></div>
+      <div class="w3-container w3-cell w3-cell-middle"><b>Global Food-source Identifier (GFI): Collaborative virtual research environment and shared data catalogue for the foodborne outbreak investigation international community</b><br>By Ana Sofia Ribeiro Duarte, Cecilie Liv Nielsen, Leonardo Candela, Lars Valentin, Frank M. Aarestrup, Håkan Vigre</div>
+</div>    
+    
+<div id="FoodControl" class="w3-container w3-hide w3-animate-zoom">
+    <p>In Food Control, Volume 121, March 2021</p>
+    <p>Abstract: The source of a foodborne disease outbreak (FBO) is often difficult to identify, especially in the early phase where interventions would be most efficient. In addition, data on FBOs are mostly scattered in different formats either in national databases and reports or within pathogen-specific or regional reporting networks, both of which are often only accessible to a selected number of individuals. Here, we developed an international, open, shared and searchable data catalogue of past FBOs – the Global Food-source Identifier (GFI). GFI was developed with two objectives: a) to create a collaborative online community of FBO investigators, encouraging the international sharing of data in a harmonized, detailed and comparable manner and b) to support foodborne outbreak investigation worldwide by providing access to detailed records of past outbreaks, which can convey valuable insight into potential ‘risk foods’ of a detected pathogen. GFI is hosted within a Virtual Research Environment (VRE), which offers additional features to facilitate the collaboration between the outbreak investigators. These features allow document exchange, communication and data visualization and analysis between the VRE members. Based on scientific literature on foodborne outbreaks and discussions within a working group, we selected a total of 46 attributes characterising the outbreak records to be included in the catalogue, aggregated under the four overarching categories causative agent, epidata, food source and report details. Detailed descriptions of the attributes in the catalogue and instructions for harmonized data reporting are available on a wiki page in the VRE. At the time of writing and public launch of GFI, the data catalogue was populated with records of 102 FBOs occurred in Denmark over a period of 12 years (2005–2016) and covering the most frequent pathogens and a broad range of typing methods. The VRE features that enable data analysis, document sharing and communication between members were applied for the graphical representation of the records available in GFI, and for the sharing of results and script files within the VRE. The descriptive analysis included the relationship between the most frequent causative agents and outbreak food sources. Such results can support a risk-based food sampling strategy in the very beginning of a foodborne outbreak investigation. The Global Food-source Identifier is a data catalogue specifically designed to host an international collection of FBO records reported in a detailed and harmonized manner. It is implemented in a virtual research environment that offers key features to facilitate and enhance the global collaboration and data sharing among FBO investigators. Once in active use by the international food safety community, we envisage that GFI will contribute to the success of FBO investigations worldwide.</p>
+    </div>
+
+<!-- ENVRI BOOK 10 --> 
+<div onclick="myAccordion('ENVRIBook_10')" class="w3-row-padding w3-left-align w3-round w3-border w3-hover-blue">
+      <div class="w3-container w3-cell w3-cell-middle"><img src="./images/covers/978-3-030-52829-4.jpg" class="w3-image w3-round w3-border" style="width:100%;max-width:50px"></img></div>
+      <div class="w3-container w3-cell w3-cell-middle w3-left-align"><b>Data Processing and Analytics for Data-Centric Sciences</b><br>By Leonardo Candela, Gianpaolo Coro, Lucio Lelii, Giancarlo Panichi, Pasquale Pagano</div>
+</div>
+
+    <div id="ENVRIBook_10" class="w3-container w3-hide w3-animate-zoom">
+    <p>In <b>Towards Interoperable Research Infrastructures for Environmental and Earth Sciences</b> 2020: xxx-xxx</p>
+    <p>Abstract: ...</p>
+    </div>
+
+<!-- ENVRI BOOK 15 --> 
+<div onclick="myAccordion('ENVRIBook_15')" class="w3-row-padding w3-left-align w3-round w3-border w3-hover-blue">
+      <div class="w3-container w3-cell w3-cell-middle"><img src="./images/covers/978-3-030-52829-4.jpg" class="w3-image w3-round" style="width:100%;max-width:50px"></img></div>
+      <div class="w3-container w3-cell w3-cell-middle w3-left-align"><b>Virtual Research Environments for Environmental and Earth Sciences: Approaches and Experiences</b><br>By Keith G. Jeffery, Leonardo Candela, Helen Glaves</div>
+</div>
+ 
+    <div id="ENVRIBook_15" class="w3-container w3-hide w3-animate-zoom">
+    <p>In <b>Towards Interoperable Research Infrastructures for Environmental and Earth Sciences</b> 2020: 272-289</p>
+    <p>Abstract: Virtual Research Environments (VREs) are playing an increasingly important role in data centric sciences. Also, the concept is known as Science Gateways in North America where generally the functionality is portal plus workflow deployment and Virtual Laboratories in Australia where the end-user can compose a complete system from the user interface to use of e-Infrastructures by a ‘pick and mix’ process from the offered assets. The key aspect is to provide an environment wherein the end-user - researcher, policymaker, commercial enterprise or citizen scientist - has available with an integrating interface all the assets needed to achieve their objectives. These aspects are explored through different approaches related to ENVRI.</p>
+    </div>
+    
+<!-- ENVRI BOOK 17 -->
+<div onclick="myAccordion('ENVRIBook_17')" class="w3-row-padding w3-left-align w3-round w3-border w3-hover-blue">
+      <div class="w3-container w3-cell w3-cell-middle"><img src="./images/covers/978-3-030-52829-4.jpg" class="w3-image w3-round" style="width:100%;max-width:50px"></img></div>
+      <div class="w3-container w3-cell w3-cell-middle w3-left-align"><b>Case Study: ENVRI Science Demonstrators with D4Science</b><br>By ...</div>
+</div>
+
+    <div id="ENVRIBook_17" class="w3-container w3-hide w3-animate-zoom">
+    <p>In <b>Towards Interoperable Research Infrastructures for Environmental and Earth Sciences</b> 2020: xxx-xxx</p>
+    <p>Abstract: ...</p>
+    </div>
+
+<button onclick="myAccordion('ISESS2020_1')" class="w3-button w3-block w3-left-align w3-round w3-border w3-hover-blue">
+AGINFRA PLUS: Running Crop Simulations on the D4Science Distributed e-Infrastructure.</button>
+
+<button onclick="myAccordion('ISESS2020_2')" class="w3-button w3-block w3-left-align w3-round w3-border w3-hover-blue">
+Using Virtual Research Environments in Agro-Environmental Research</button>
+    
+<button onclick="myAccordion('IRCDL2020')" class="w3-button w3-block w3-left-align w3-round w3-border w3-hover-blue">RepOSGate: Open Science Gateways for Institutional Repositories</button>
+    
+    <h5>2019</h5>
+    
+    <h5>2018</h5>
+    
+    <h5>2017</h5>
+    
+    <h5>2016</h5>
+    
+    <h5>2015</h5>
+            
+    <h5>2014</h5>
+    
+    <h5>2013</h5>
+    
+    <h5>2012</h5>
+    
+    <h5>2011</h5>
+    
+    <h5>2010</h5>
+    
+    <h5>2009</h5>
+    
+    <h5>2008</h5>
+    
+    <h5>2007</h5>
+    
+    <h5>2006</h5>
+    
+    <h5>2005</h5>        
+    
+    <h5>2004</h5>
+    
+    <h5>2003</h5>
+    
+    <h5>2002</h5>
+    
+  </div>
+        
+  <!-- P R O J E C T S   S E C T I O N -->
+  <div class="w3-container w3-padding-large" style="margin-bottom:32px" id="projects">
+    <h4><i class="fas fa-atom fa-fw w3-margin-right"></i><b>Projects</b></h4>
+    <p>My research activity has been performed in the context of various European research projects. I started participating in projects in 2001 and enjoyed to collaborate with several colleagues across the globe.</p>
+
+<!-- BLUE-CLOUD -->
+    <button onclick="myAccordion('Blue-Cloud')" class="w3-button w3-block w3-left-align w3-round w3-border w3-hover-blue">
+Blue-Cloud</button>
+
+    <div id="Blue-Cloud" class="w3-container w3-hide">
+    <p>Some text..</p>
+</div>
+
+<!-- EOSC-PILLAR -->
+<button onclick="myAccordion('EOSC-Pillar')" class="w3-button w3-block w3-left-align w3-round w3-border w3-hover-blue">EOSC-Pillar (1 Jul 2019 - 30 Jun 2022)</button>
+<div id="EOSC-Pillar" class="w3-container w3-hide">
+  <p>Some text..</p>
+</div>
+
+  </div>
+  
+  <!-- C O N T A C T --> 
+  <div class="w3-container w3-padding-large w3-blue">
+    <h4 id="contact"><b>Contact Me</b></h4>
+    <div class="w3-row-padding w3-center w3-padding-16" style="margin:0 -16px">
+      <div class="w3-third w3-light-grey w3-text-blue">
+        <p><i class="fa fa-envelope w3-xxlarge "></i></p>
+        <p>leonardo.candela@isti.cnr.it</p>
+      </div>
+      <div class="w3-third w3-blue">
+        <p><i class="fa fa-map-marker w3-xxlarge w3-text-light-grey"></i></p>
+        <p>Istituto di Scienza e Tecnologie dell'Informazione, Consiglio Nazionale delle Ricerche, Via G. Moruzzi, 1 - 56124 Pisa - Italy</p>
+      </div>
+      <div class="w3-third w3-light-grey w3-text-blue">
+        <p><i class="fa fa-phone w3-xxlarge"></i></p>
+        <p w3-text-blue>0039 050 6212039</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- F O O T E R -->
+<!--  <footer class="w3-container w3-padding-32 w3-blue">
+  <div class="w3-row-padding">
+    <div class="w3-third">
+      <h3>FOOTER</h3>
+      <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+      <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+    </div>
+  
+    <div class="w3-third">
+      <h3>BLOG POSTS</h3>
+      <ul class="w3-ul w3-hoverable">
+        <li class="w3-padding-16">
+          <img src="/w3images/workshop.jpg" class="w3-left w3-margin-right" style="width:50px">
+          <span class="w3-large">Lorem</span><br>
+          <span>Sed mattis nunc</span>
+        </li>
+        <li class="w3-padding-16">
+          <img src="/w3images/gondol.jpg" class="w3-left w3-margin-right" style="width:50px">
+          <span class="w3-large">Ipsum</span><br>
+          <span>Praes tinci sed</span>
+        </li> 
+      </ul>
+    </div>
+-->
+
+<!--
+    <div class="w3-third">
+      <h3>POPULAR TAGS</h3>
+      <p>
+        <span class="w3-tag w3-black w3-margin-bottom">Travel</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">New York</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">London</span>
+        <span class="w3-tag w3-grey w3-small w3-margin-bottom">IKEA</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">NORWAY</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">DIY</span>
+        <span class="w3-tag w3-grey w3-small w3-margin-bottom">Ideas</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">Baby</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">Family</span>
+        <span class="w3-tag w3-grey w3-small w3-margin-bottom">News</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">Clothing</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">Shopping</span>
+        <span class="w3-tag w3-grey w3-small w3-margin-bottom">Sports</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">Games</span>
+      </p>
+    </div>
+-->
+
+  </div>
+  </footer>
+  
+  <div class="w3-light-grey w3-center w3-padding-24">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></div>
+
+<!-- End page content -->
+</div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+</script>
+
+</body>
+</html>
